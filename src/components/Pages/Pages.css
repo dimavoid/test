@@ -1,0 +1,45 @@
+.Pages {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Card {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid lightslategray;
+
+  padding: 10px 15px;
+  margin: 0 0 10px 0;
+}
+
+.Card__title {
+  width: 60%;
+}
+
+.Card__id {
+  margin: 10px 0 10px auto;
+}
+
+.Card__text {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.Card__time {
+  margin: 10px 0;
+}
+
+.Card__link {
+  border: 3px solid lightslategray;
+  margin: 0 0 0 auto;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+  align-self: flex-end;
+}
+
+.Card__link:hover {
+  border-color: lightseagreen;
+}

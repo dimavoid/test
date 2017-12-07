@@ -1,0 +1,30 @@
+.Menu {
+  /* border: 2px solid lightslategray; */
+  padding: 5px;
+}
+
+.Menu__list {
+  display: flex;
+
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Menu__list li {
+  margin: 0 5px 0 5px;
+}
+
+.Menu__link {
+  border: 3px solid lightslategray;
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.Menu__link:hover {
+  border-color: lightseagreen;
+}

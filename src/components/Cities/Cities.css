@@ -1,0 +1,15 @@
+.Cities {
+  /* border: 2px solid lightslategray; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.City {
+  text-align: center;
+  width: 30%;
+  border-bottom: 2px solid lightslategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

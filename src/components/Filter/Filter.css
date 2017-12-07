@@ -1,0 +1,31 @@
+.Filter {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.Filter label {
+  margin: 0 10px 0 0;
+  flex-shrink: 0;
+}
+
+.Filter select {
+  border: 3px solid lightslategray;
+  margin: 0 10px 0 0;
+  flex-shrink: 0;
+  padding: 5px;
+}
+
+.Filter select:focus {
+  border-color: lightseagreen;
+}
+
+.Filter input {
+  border: 3px solid lightslategray;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.Filter input:focus {
+  border: 3px solid lightseagreen;
+}
