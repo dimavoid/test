@@ -6,31 +6,15 @@ import Filter from '../Filter/Filter';
 import './Pages.css';
 
 class Pages extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      request: '',
-    };
-  }
-
-  onSearch = (e) => {
-    const request = e.target.value.toLowerCase();
-
-    this.setState({ request })
-  }
-
   onFilter = (request) => {
     this.props.onFilter(request);
   }
 
   render() {
-    const list = this.props.pages.filter( (page) => {
-      return ~page.title.toLowerCase().indexOf(this.state.request);
-    });
+    const list = this.props.pages;
 
-    const pages = list.map((page, index) => {
-      const time = page.created;
+    const pages = (list.length) ? list.map((page, index) => {
+      // const time = page.created;
       // console.log(time);
       // console.log(page.active);
 
@@ -48,7 +32,7 @@ class Pages extends Component {
           <Link className="Card__link" to={`/page/${page.id}`}>Edit</Link>
         </section>
       );
-    }); 
+    }) : <h2 style={{ textAlign: 'center' }} >Loading...</h2>; 
 
     return (
       <section className="Pages">
