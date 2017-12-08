@@ -14,9 +14,6 @@ class Pages extends Component {
     const list = this.props.pages;
 
     const pages = (list.length) ? list.map((page, index) => {
-      // const time = page.created;
-      // console.log(time);
-      // console.log(page.active);
 
       return (
         <section className="Card" key={index}>

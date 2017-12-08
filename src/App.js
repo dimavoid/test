@@ -22,7 +22,7 @@ class App extends Component {
 
   refreshPages = (filter) => {
     console.log('refresh');
-    console.log('filters:', filter);
+    // console.log('filters:', filter);
 
     let city = '';
     let active = '';
@@ -41,7 +41,7 @@ class App extends Component {
       if ( (city !== '' || active !== '') && search !== '') {search = `&search=${filter.search}`};
     }
 
-    console.log('url:', city+active+search);
+    // console.log('url:', city+active+search);
 
     fetch(`/api/page/${city+active+search}`)
       .then(res => res.json())
